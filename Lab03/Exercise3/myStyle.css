@@ -1,0 +1,31 @@
+p
+{
+  background-color: red;
+  color: black;
+  font-size: 12;
+  font-family: Comic Sans MS
+}
+body
+{
+  background-color: Purple;
+  background-image: url(football.gif);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  background-attachment: fixed;
+}
+a
+{
+  background-color: Black;
+  color: red;
+}
+a:hover
+{
+  background-color: Purple;
+  color:green;
+}
+p.boo
+{
+  color: orange;
+  background-color: black;
+}
