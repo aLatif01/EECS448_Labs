@@ -1,0 +1,41 @@
+<html>
+
+<head>
+  <div align="center">
+  <title>My Phone Shop</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type = "text/javascript" src = "formChecker.js"></script>
+</head>
+<body>
+    <h2>Welcome to my Phone Store</h2>
+    <form id="form" action="customerBackend.php" method="POST">
+      Email: <input type ="email" name="email"></input>
+      <br>
+      Password: <input type="password" name ="password"></input>
+      <br>
+      <p>Take your pick</p>
+      iPhone 99: $2.00 <input name = "iPhone_99" type = "number" min ="0" max ="99" value = "0">
+      <br>
+      <br>
+      Galaxy s77: $5.00 <input name ="Galaxy" type = "number" min ="0" max ="99" value = "0">
+      <br>
+      <br>
+      Nokia: $10.00 <input name ="Nokia" type = "number" min ="0" max ="99" value = "0">
+      <br>
+
+      <p> Now, select a shipping method:</p>
+      <br>
+      <input type = "radio" name = "shippingMethod" value ="0" checked="true">7-Day: Free
+      <br>
+      <input type = "radio" name="shippingMethod" value ="1">3-Day: $5.00
+      <br>
+      <input type = "radio" name="shippingMethod" value ="2">Overnight: $50.00
+      <br>
+      <input type ="submit" value = "Submit Cart">
+      <br>
+      <input type = "button" value = "Reset Cart">
+      </form>
+    </div>
+</body>
+
+</html>

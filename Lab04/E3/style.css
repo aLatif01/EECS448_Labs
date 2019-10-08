@@ -1,0 +1,46 @@
+body
+{
+  font-family: Arial;
+  font-weight: bold;
+  color: GoldenRod;
+  background: CornSilk;
+}
+
+p
+{
+  color: DarkBlue;
+}
+
+h2
+{
+  color: DarkBlue;
+}
+
+input
+{
+  color: Black;
+  font-weight: bold;
+}
+
+input[type='submit']
+{
+  background-color: CornSilk;
+  color: DarkBlue;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+input[type='button']
+{
+  background-color: CornSilk;
+  color: DarkBlue;
+  font-weight: bold;
+  border: 1px solid;
+}
+
+table
+{
+  color: CadetBlue;
+  border: GoldenRod;
+  border-collapse: collapse;
+}
