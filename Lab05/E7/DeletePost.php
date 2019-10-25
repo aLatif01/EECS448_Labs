@@ -10,18 +10,26 @@ if ($mysqli->connect_errno)
 
 $delete = $_POST["checkbox"];
 
-foreach($delete as $value)
+if($delete)
 {
-  $query = "DELETE FROM Posts WHERE post_id = '$value'";
-  if($mysqli->query($query) === TRUE)
+  foreach($delete as $value)
   {
-    echo "Post id: " .$value. " has been deleted";
-    echo "<br>";
-  }
-  else
-  {
-    echo "ERROR: " .$sql. "<br>" .$mysqli->error;
+    $query = "DELETE FROM Posts WHERE post_id = '$value'";
+    if($mysqli->query($query) === TRUE)
+    {
+      echo "Post id: " .$value. " has been deleted";
+      echo "<br>";
+    }
+    else
+    {
+      echo "ERROR: " .$sql. "<br>" .$mysqli->error;
+    }
   }
 }
+else {
+  echo "ERROR: No checkbox was selected";
+}
+
+
 $mysqli->close();
  ?>
