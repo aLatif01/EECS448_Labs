@@ -20,14 +20,34 @@ public:
 
  private:
 
-   void test1();  //New queue is empty
+   /**
+    * @pre A queue exists
+    * @post Creates a Queue and tests if isEmpty() is returning true
+    **/
+   void test1();
+
+   /**
+    * @pre A queue exists
+    * @post Enqueueing makes the Queue not empty
+    **/
    void test2();
+
+   /**
+    * @pre A queue exists
+    * @post Does peekFront() return the correct value
+    **/
    void test3();
+
+   /**
+    * @pre A queue exists
+    * @post Enqueing is adding to the front of the Queue
+    **/
    void test4();
    void test5();
    void test6();
    void test7();
    void test8();
+   void test9();
  };
 
 

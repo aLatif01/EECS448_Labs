@@ -1,8 +1,8 @@
 /**
  * @author Afnan W. Latif
- * @file Queue.cpp
+ * @file TestClass.cpp
  * @date 11.12.2019
- * @brief define functions related to a Queue
+ * @brief Test class function definitions
  **/
 
  #include "TestClass.h"
@@ -79,17 +79,22 @@ void TestClass::test3()
 void TestClass::test4()
 {
   Queue* test4 = new Queue();
+  int firstValue = 0;
   for(int i = 0; i < 4; i++)
   {
+    if(i == 0)
+    {
+      firstValue = i;
+    }
     test4->enqueue(i);
   }
-  if(test4->peekFront() == 0)
+  if(test4->peekFront() == firstValue)
   {
-    std::cout <<"Test 04: Enqueue is adding to the back of the queue: PASSED\n";
+    std::cout <<"Test 04: Enqueue is adding to the front of the queue: PASSED\n";
   }
   else
   {
-    std::cout <<"Test 04: Enqueue is adding to the back of the queue: FAILED\n";
+    std::cout <<"Test 04: Enqueue is adding to the front of the queue: FAILED\n";
   }
 
   delete test4;
@@ -161,5 +166,28 @@ void TestClass::test7()
 
 void TestClass::test8()
 {
-  //test for peekFront in a empty queue
+  Queue* test8 = new Queue();
+  try
+  {
+    test8->peekFront();
+  }
+  catch(const std::exception& e)
+  {
+    std::cout << "Test 08: Error caught -- " << e.what() << ": PASSED\n";
+  }
+  delete test8;
+}
+
+void TestClass::test9()
+{
+  Queue* test9 = new Queue();
+  try
+  {
+    test9->dequeue();
+  }
+  catch(const std::exception& e)
+  {
+    std::cout << "Test 09: Error caught -- " << e.what() << ": PASSED\n";
+  }
+  delete test9;
 }
