@@ -43,10 +43,37 @@ public:
     * @post Enqueing is adding to the front of the Queue
     **/
    void test4();
+
+   /**
+    * @pre A queue exists
+    * @post Dequeueing removes from the front of the queue
+    **/
    void test5();
+
+   /**
+    * @pre A queue exists
+    * @post peekFront() is being updated with current front value
+    **/
    void test6();
+
+   /**
+    * @pre A queue exists
+    * @post After removing all enqueues, the queue is empty
+    **/
    void test7();
+
+   /**
+    * @pre A queue exists
+    * @post Tests if proper error messages are thrown
+    * @throw throws error front peeking an empty queue
+    **/
    void test8();
+
+   /**
+    * @pre A queue exists
+    * @post Tests if dequeing error messages are working
+    * @throw throws error for dequeueing an empty queue
+    **/
    void test9();
  };
 

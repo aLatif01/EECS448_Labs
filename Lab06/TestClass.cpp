@@ -135,11 +135,11 @@ void TestClass::test6()
   test6->enqueue(5);
   if(test6->peekFront() == 5)
   {
-    std::cout << "Test 06: Peek front is being updated with the current front value: PASSED\n";
+    std::cout << "Test 06: Peek front is being updated with the proper front value: PASSED\n";
   }
   else
   {
-    std::cout << "Test 06: Peek front is being updated with the current front value: FAILED\n";
+    std::cout << "Test 06: Peek front is being updated with the proper front value: FAILED\n";
   }
 
   delete test6;
