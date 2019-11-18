@@ -23,8 +23,9 @@ void TestClass::runTests()
   test6();
   test7();
   test8();
+  test9();
 
-  std::cout << "\n\n\n END OF TESTING\n";
+  std::cout << "\n\n\nEND OF TESTING\n";
 }
 
 void TestClass::test1()
