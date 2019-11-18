@@ -1,0 +1,8 @@
+The purposely inserted bug has to deal with enqueueing:
+
+1.  When enqueue() is called, it adds to the front of the queue.
+    
+    Proof:
+    This is visible in my fourth test as when I call peekFront() it is not equal to the first value.
+    The way enqueue() is actually working is similar to a stack. 
+    It adds new values to the front of the queue, when it should be adding to the back.
