@@ -6,3 +6,8 @@ The purposely inserted bug has to deal with enqueueing:
     This is visible in my fourth test as when I call peekFront() it is not equal to the first value.
     The way enqueue() is actually working is similar to a stack. 
     It adds new values to the front of the queue, when it should be adding to the back.
+
+
+Note:
+    Although this is not a bug, the documentation for dequeue() says it will return the value of the entry at the front of the          
+    queue. This is false as 1, it should not do this, and 2, it is a void function which does not return anything.
